@@ -1,0 +1,114 @@
+// h1 {
+
+// }
+
+$blue: #0060DF;
+$grey: #79797B;
+
+body {
+  font-family: 'Lato', serif;
+}
+
+#index {
+  margin: 3rem 2rem;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $blue;
+    margin-bottom: 0;
+  }
+  
+  .top {
+
+    &-header {
+
+      .photo {
+        padding: 0.5rem;
+      }
+
+      .title {
+        padding-left: 1rem;
+        font-weight: 700;
+    
+        h1 {
+          font-size: 2rem;
+          margin: 0;
+        }
+        
+        .position {
+          color: $blue;
+          font-size: 1.3rem;
+        }
+      }
+
+      .introduction {
+        color: $grey;
+        font-style: italic;
+      }
+    }
+
+    &-side {
+
+      .basic-info {
+        color: $grey;
+      }
+    } 
+  }
+
+
+  .consent {
+    color: $grey;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.entry {
+  padding-left: 1rem;
+
+  &-position {
+    font-weight: 700;
+  }
+
+  &-company {
+    color: $blue;
+  }
+
+  &-date {
+    color: $grey;
+  }
+  
+  &-description {
+    padding-left: 1rem;
+  }
+
+  a {
+    display: block;
+    width: 100%
+  }
+}
+
+.spacer-05 {
+  height: 0.5rem;
+  width: 100%;
+}
+
+.spacer-1 {
+  height: 1rem;
+  width: 100%;
+}
+
+
+.spacer-2 {
+  height: 2rem;
+  width: 100%;
+}
+
+
+.spacer-3 {
+  height: 3rem;
+  width: 100%;
+}

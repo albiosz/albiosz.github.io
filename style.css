@@ -1,0 +1,84 @@
+body {
+  font-family: "Lato", serif;
+}
+
+#index {
+  margin: 3rem 2rem;
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+}
+#index h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0060DF;
+  margin-bottom: 0;
+}
+#index .top-header .photo {
+  padding: 0.5rem;
+}
+#index .top-header .title {
+  padding-left: 1rem;
+  font-weight: 700;
+}
+#index .top-header .title h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+#index .top-header .title .position {
+  color: #0060DF;
+  font-size: 1.3rem;
+}
+#index .top-header .introduction {
+  color: #79797B;
+  font-style: italic;
+}
+#index .top-side .basic-info {
+  color: #79797B;
+}
+#index .consent {
+  color: #79797B;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.entry {
+  padding-left: 1rem;
+}
+.entry-position {
+  font-weight: 700;
+}
+.entry-company {
+  color: #0060DF;
+}
+.entry-date {
+  color: #79797B;
+}
+.entry-description {
+  padding-left: 1rem;
+}
+.entry a {
+  display: block;
+  width: 100%;
+}
+
+.spacer-05 {
+  height: 0.5rem;
+  width: 100%;
+}
+
+.spacer-1 {
+  height: 1rem;
+  width: 100%;
+}
+
+.spacer-2 {
+  height: 2rem;
+  width: 100%;
+}
+
+.spacer-3 {
+  height: 3rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
