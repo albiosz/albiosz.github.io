@@ -5,6 +5,9 @@
 $blue: #0060DF;
 $grey: #79797B;
 
+$medium: 640px;
+$large: 1024px;
+
 body {
   font-family: 'Lato', serif;
 }
@@ -25,13 +28,26 @@ body {
 
     &-header {
 
+      @media screen and (min-width: $medium) {
+        justify-content: left;
+      }
+
       .photo {
         padding: 0.5rem;
+
+        @media screen and (min-width: $large) {
+          width: 14.8rem;
+        } 
       }
 
       .title {
-        padding-left: 1rem;
+        
         font-weight: 700;
+
+        @media screen and (min-width: $medium) {
+          text-align: left;
+          padding-left: 1rem;
+        }
     
         h1 {
           font-size: 2rem;
@@ -51,6 +67,10 @@ body {
     }
 
     &-side {
+        
+      @media screen and (min-width: $large) {
+        padding-left: 1.96rem;
+      }
 
       .basic-info {
         color: $grey;
@@ -58,6 +78,17 @@ body {
     } 
   }
 
+  .main {
+    &-side {
+      @media screen and (min-width: $large) {
+        padding-left: 1.96rem;
+      }
+    }
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
 
   .consent {
     color: $grey;

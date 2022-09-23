@@ -6,9 +6,9 @@ var data = {
     position: "JUNIOR SOFTWARE DEVELOPER",
     birthday: "17/02/1999",
     email: "szulcalbert@gmail.com",
-    phone: "+48 798 977 221 (Whatsapp)",
+    phone: "+48 798 977 221 (Wapp)",
     location: "Guadalajara, Mexico",
-    introduction: "A diligent graduate who wants to progress in his professional career. Always ready for new challenges, helpful, and eager to learn from others."
+    introduction: "A diligent graduate who wants to progress in his professional career. Ready for new challenges, helpful, and eager to learn from others."
   },
 
   languages: [
@@ -54,28 +54,30 @@ var data = {
       location: "Poznań, Poland",
       date: "From March 2020 to June 2020",
       description: [
-        "I experienced working in an IT company, learned how to program in ABAP and, in the end, created a small frontend-app for ordering pizza.",
+        "I experienced working in an IT company, learned how to program in ABAP and, in the end, created a small frontend app for ordering pizza.",
       ]
     }
   ],
 
   education: [
     {
-      degree: "BEng",
+      degree: "Bachelor of Engineering",
       career: "Computer Science",
       university: "Poznań University of Technology",
       date: "From October 2018 to February 2022",
       description: [
-        "Graduated in February 2022 with the highest possible mark for bachelor thesis - 5.0 (max: 5.0, min 2.0). The average mark during the whole period of studies: 4.64 (max: 5.0, min 2.0)."
+        "Graduated in February 2022 with the highest possible mark for bachelor thesis - 5.0 (max: 5.0, min 2.0). The average mark during the whole period of studies: 4.64 (max: 5.0, min 2.0).",
+        "Most relevant courses: Algorithms and Data Structures, Operating Systems, Object Oriented Programming, Database Systems, Computer Networks, Software Engineering, Advanced Internet Applications."
       ]
     },
     {
-      degree: "BEng (student exchange)",
+      degree: "Bachelor of Engineering (student exchange)",
       career: "Computer Science",
       university: "Bielefeld University",
       date: "From March 2021 to February 2022",
       description: [
-        "During the exchange programme, I took courses in both English and German. Subjects: Introduction to Neural Networks, Cryptography, Big Data Analytics, Cloud Computing, Machine Learning, Data Mining."
+        "During the exchange programme, I took courses in both English and German.",
+        "Most relevant courses: Introduction to Neural Networks, Cryptography, Big Data Analytics, Cloud Computing, Machine Learning, Data Mining."
       ]
     }
   ],
@@ -83,47 +85,59 @@ var data = {
   skills: [
     {
       title: "OOP (Object Oriented Programming)",
-      description: "Understanding and ability to apply: classes, inheritance, interfaces, abstraction, encapsulation, polymorphism."
+      description: "Understanding how they work, when they are supposed to be used and ability to apply: classes, inheritance, interfaces, abstraction, encapsulation, polymorphism."
     },
     {
       title: "REST API",
       description: "Knowledge of what characterizes efficient REST API based on experience gained during working on professional projects."
     },
     {
-      title: "Databases",
-      description: "Ability to write advanced queries, modify and create tables with constraints, references etc. Familiar and experienced with modelling databases in own projects."
+      title: "Relational databases",
+      description: "Ability to write advanced queries, modify and create tables with constraints, references etc. Familiar and experienced with modelling relational databases in my own and professional projects. Experience with Oracle (university) and Postgres (professional)."
     },
     {
       title: "ORM (Object-relational mapping)",
-      description: "Skills to implement a relational database from a schema with all types of dependencies between relations. Spring Data JPA"
+      description: "Skills to implement a mapping between relational database and objects from a schema with all types of dependencies between relations. Familiar with Spring Data JPA (Java) and professionally experienced with Gorm (GOlang)"
     },
     {
-      title: "Java",
-      description: "Abilty to use in practice: streams, nested classes, concurrency, exceptions, annotations, JDBC."
+      title: "Backend development",
+      description: "Professional experience in creating backend applications using the Express-like approach. Familiar with how to create endpoints, middleware, implement JWT authorization etc."
     },
     {
-      title: "React + Redux",
-      description: "Know-how to build single-page applications using React library with centralized state using Redux. Both class and functional approaches are familiar to me. Experience in using Hooks."
+      title: "Git",
+      description: "Ability to manage projects of different sizes using Git. Professional experience in using branches, rebase, merge, squash etc. Aware of the importance of clean Git history on the main branch."
+    },
+    {
+      title: "Docker",
+      description: "First experience in using containers and creating images, collected in online courses and then applied in my project. Understand the importance of creating software that works independently from the used operating system."
+    },
+    {
+      title: "Java SE 11",
+      description: "Familiar with the concepts implemented in Java 11 acquired during an Oracle course Java SE 11 SE. Ability to use in practice: streams, nested classes, concurrency, exceptions, annotations."
+    },
+    {
+      title: "GOlang + Fiber",
+      description: "Professional experience in creating a medium size backend application using GOlang and framework Fiber."
     },
     {
       title: "Javascript + JQuery",
       description: "Fluency in using basic and more advanced structures of the language. Experienced in using most of the concepts in ES6. Ability to write basic asynchronous code."
     },
     {
+      title: "React + Redux",
+      description: "Know-how to build single-page applications using React library with a centralized state using Redux. Both class and functional approaches are familiar to me. Experience in using Hooks."
+    },
+    {
+      title: "Vue + Nuxt",
+      description: "Professional experience how to develop Vue apps. In my previous company, Nuxt was used to save time on the configuration of the framework."
+    },
+    {
       title: "HTML",
-      description: "Experience in creating web pages structure using HTML. Knowledge of how to make a webpage responsive using HTML frameworks e. g. Foundation Framework."
+      description: "Professional experience in creating web pages using HTML."
     },
     {
       title: "CSS",
-      description: "Knowledge and some experience in styling webpages using basic attributes and Flexboxes."
-    },
-    {
-      title: "Git",
-      description: "Ability to manage projects of different sizes using Git."
-    },
-    {
-      title: "Docker",
-      description: "First experience in using containers and creating images, collected in online courses and then applied in my own project"
+      description: "Knowledge and experience in styling webpages using basic attributes and Flexboxes. Professional experience in creating responsive web pages using Foundation framework."
     },
     {
       title: "Windows, Linux",
@@ -143,7 +157,7 @@ var data = {
       </ul>`,
       link: "https://github.com/albiosz/car-tracker-frontend",
       footnote: "The app was also deployed on Netlify",
-      footnoteLink: "﻿https://clever-wright-726f92.netlify.app"
+      footnoteLink: "https://clever-wright-726f92.netlify.app"
     },
     {
       title: "Car tracker backend (Spring + Postgresql) - work in progress",
@@ -152,9 +166,11 @@ var data = {
     },
     {
       title: "Simple Text Editor (Java + Swing)",
-      description: `Basic text editor with easy to use GUI, which allows a user to:
-      - create new or open a text file,
-      - search through a file using regular expressions or plain text`,
+      description: `Basic text editor with easy-to-use GUI, which allows a user to:
+      <ul>
+        <li> create new or open a text file,
+        <li> search through a file using regular expressions or plain text
+      </ul>`,
       link: "https://github.com/albiosz/Simple-Text-Editor"
     },
     {
@@ -167,7 +183,7 @@ var data = {
   assets: [
     {
       title: "Easy to collaborate with",
-      description: "I am an open-minded person, I am eager to discuss and compare solutions about programming problems with co-workers." 
+      description: "I am an open-minded person, I am eager to discuss and compare solutions to programming problems with co-workers." 
     },
     {
       title: "Searching for solutions",
@@ -181,12 +197,12 @@ var data = {
 
   interests: [
     {
-      title: "Traveling and socializing",
-      description: "I love visiting new places and getting to know new people with a different perspective on life than my own."
+      title: "Travelling and socializing",
+      description: "I love visiting new places and getting to know new people with different perspectives on life than my own."
     },
     {
       title: "Sport",
-      description: "Swimming and jogging are two things which always motivate me to sooth my mind when facing an issue that seems unsolvable."
+      description: "Swimming and jogging are two things which always motivate me to soothe my mind when facing an issue that seems unsolvable."
     }
   ],
 
@@ -197,6 +213,5 @@ function renderPagge() {
   let template = document.getElementById('index').innerHTML;
   let rendered = Mustache.render(template, data);
   document.getElementById('index').innerHTML = rendered;
-  console.log("Rendered")
 }
 renderPagge()

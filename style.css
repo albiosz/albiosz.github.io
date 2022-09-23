@@ -13,12 +13,27 @@ body {
   color: #0060DF;
   margin-bottom: 0;
 }
+@media screen and (min-width: 640px) {
+  #index .top-header {
+    justify-content: left;
+  }
+}
 #index .top-header .photo {
   padding: 0.5rem;
 }
+@media screen and (min-width: 1024px) {
+  #index .top-header .photo {
+    width: 14.8rem;
+  }
+}
 #index .top-header .title {
-  padding-left: 1rem;
   font-weight: 700;
+}
+@media screen and (min-width: 640px) {
+  #index .top-header .title {
+    text-align: left;
+    padding-left: 1rem;
+  }
 }
 #index .top-header .title h1 {
   font-size: 2rem;
@@ -32,8 +47,21 @@ body {
   color: #79797B;
   font-style: italic;
 }
+@media screen and (min-width: 1024px) {
+  #index .top-side {
+    padding-left: 1.96rem;
+  }
+}
 #index .top-side .basic-info {
   color: #79797B;
+}
+@media screen and (min-width: 1024px) {
+  #index .main-side {
+    padding-left: 1.96rem;
+  }
+}
+#index .main ul {
+  margin-bottom: 0;
 }
 #index .consent {
   color: #79797B;

@@ -18,13 +18,13 @@
   <body>
     <div id="index">
       <div class="top grid-x">
-        <div class="top-header grid-x cell small-12 large-9">
+        <div class="top-header grid-x cell small-12 large-9 align-center">
 
-          <div class="photo cell small-3">
+          <div class="cell small-8 medium-4 photo">
               <img src="{{header.img}}" />
           </div>
           
-          <div class="title grid-x align-center-middle cell small-9">
+          <div class="title grid-x align-center-middle cell small-12 medium-8 text-center">
             <h1 class="small-12">{{header.name}} {{header.surname}}</h1>
             <div class="small-12 position">{{header.position}}</div>
           </div>
@@ -42,14 +42,20 @@
               <span class="material-icons">event</span>
               &nbsp; Date of birth {{header.birthday}}
             </div>
+            <div class="spacer-05"></div>
+
             <div class="flex-container align-middle">
               <span class="material-icons">mail</span>
               &nbsp; {{header.email}}
             </div>
+            <div class="spacer-05"></div>
+
             <div class="flex-container align-middle">
               <span class="material-icons">phone</span>
               &nbsp; {{header.phone}}
             </div>
+            <div class="spacer-05"></div>
+
             <div class="flex-container align-middle">
               <span class="material-icons">house</span>
               &nbsp; {{header.location}}
@@ -57,20 +63,22 @@
           </div>
           <div class="spacer-1"></div>
 
-          <h2>
-            Languages
-          </h2>
-          <div class="spacer-05"></div>
-
-          {{#languages}}
-            <div class="entry-title">
-              <span class="entry-position"> {{language}} </span> - {{level}}
-            </div>
+          <div class="languages">
+            <h2>
+              Languages
+            </h2>
             <div class="spacer-05"></div>
-          {{/languages}}
+  
+            {{#languages}}
+            <div class="entry">
+              <div class="entry-title">
+                <span class="entry-position"> {{language}} </span> - {{level}}
+              </div>
+              <div class="spacer-05"></div>
+            </div>
+            {{/languages}}
+          </div>
         </div>
-
-
       </div>
       <div class="spacer-1"></div>
 
@@ -103,8 +111,9 @@
               {{/description}}
             </div>
           </div>
-          <div class="spacer-2"></div>
+          <div class="spacer-1"></div>
           {{/experience}}
+          <div class="spacer-1"></div>
 
           <!-- EDUCATION ---------------------------------- -->
           <h2 class="small-12">
@@ -132,8 +141,9 @@
               {{/description}}
             </div>
           </div>
-          <div class="spacer-2"></div>
+          <div class="spacer-1"></div>
           {{/education}}
+          <div class="spacer-1"></div>
 
           <!-- SKILLS ---------------------------------- -->
           <h2 class="small-12">
@@ -148,11 +158,15 @@
             </div>
 
             <div class="entry-description">
-              {{description}}
+              {{#description}}
+              {{.}} 
+              <div class="spacer-05"></div>
+              {{/description}}
             </div>
           </div>
           <div class="spacer-1"></div>
           {{/skills}}
+          <div class="spacer-1"></div>
           
           <!-- PROJECTS ---------------------------------- -->
           <h2 class="small-12">
@@ -179,6 +193,8 @@
           </div>
           <div class="spacer-1"></div>
           {{/projects}}
+          <div class="spacer-1"></div>
+
         </div>
         <div class="main-side cell small-12 large-3">
 
