@@ -84,7 +84,7 @@ body {
 .entry-description {
   padding-left: 1rem;
 }
-.entry a {
+.entry a.block {
   display: block;
   width: 100%;
 }

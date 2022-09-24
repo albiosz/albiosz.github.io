@@ -34,7 +34,7 @@ var data = {
       date: "From May 2022 to August 2022",
       description: [
         "Engaged in various internal projects for the company, during which I gained many new skills.",
-        "Implemented a garage configurator from scratch using only essential web technologies (HTML, CSS, JS, jQuery).",
+        'Implemented a garage configurator from scratch using only essential web technologies (HTML, CSS, JS, jQuery). The solution is available online <a target="_blank" href="https://www.mc-garagen.de/index.php?screen=products">here</a>.',
         "For the last 2,5 months, I was developing an internal tool for sellers in the company. I expanded my knowledge on how to properly create RESTful API. GO, Fiber and Gorm were utilized on the server side; Vue and Nuxt on the frontend-side."
       ]
     },
