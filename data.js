@@ -8,6 +8,8 @@ var data = {
     email: "szulcalbert@gmail.com",
     phone: "+48 798 977 221 (Wapp)",
     location: "Guadalajara, Mexico",
+    github: '<a href="https://github.com/albiosz" target="_blank"> My Github </a>',
+    linkToCV: '<a href="https://albiosz.github.io/">  </a>',
     introduction: "A diligent graduate who wants to progress in his professional career. Ready for new challenges, helpful, and eager to learn from others."
   },
 

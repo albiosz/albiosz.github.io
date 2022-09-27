@@ -1,0 +1,61 @@
+@use "style.scss";
+
+
+#index {
+
+  color: style.$blue !important;
+  margin-top: 0;
+
+  overflow-wrap: break-word;
+  width: 18cm;
+
+  .top-header,.top-side,.main-main,.main-side {
+    width: 100% !important;
+  }
+
+  .main-side {
+    margin-top: 180px;
+  }
+
+  .main-main {
+    * {
+      page-break-inside: avoid;
+    }
+  }
+
+  .top {
+    &-header {
+
+      .title {
+        text-align: left;
+        padding-left: 1rem;
+      }
+    }
+
+    .photo {
+      width: 25%;
+    }
+
+    &-side {
+      font-size: 1.1rem;
+
+      .basic-info .link-to-cv {
+        display: block;
+      }
+    }
+  }
+
+  .main {
+
+    .no-href {
+      a[href]:after {
+        content: none !important;
+      }
+    }
+  }
+
+}
+
+
+
+

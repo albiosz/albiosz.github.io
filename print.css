@@ -112,4 +112,36 @@ body {
   width: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+#index {
+  color: #0060DF !important;
+  margin-top: 0;
+  overflow-wrap: break-word;
+  width: 18cm;
+}
+#index .top-header, #index .top-side, #index .main-main, #index .main-side {
+  width: 100% !important;
+}
+#index .main-side {
+  margin-top: 180px;
+}
+#index .main-main * {
+  page-break-inside: avoid;
+}
+#index .top-header .title {
+  text-align: left;
+  padding-left: 1rem;
+}
+#index .top .photo {
+  width: 25%;
+}
+#index .top-side {
+  font-size: 1.1rem;
+}
+#index .top-side .basic-info .link-to-cv {
+  display: block;
+}
+#index .main .no-href a[href]:after {
+  content: none !important;
+}
+
+/*# sourceMappingURL=print.css.map */
