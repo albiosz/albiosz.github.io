@@ -3,9 +3,14 @@ body {
 }
 
 #index {
-  margin: 3rem 2rem;
+  margin: 3rem 3rem;
   font-family: "Lato", sans-serif;
   text-align: justify;
+}
+@media screen and (min-width: 1006px) {
+  #index {
+    width: 1200px;
+  }
 }
 #index h2 {
   font-size: 1.4rem;
@@ -13,15 +18,16 @@ body {
   color: #0060DF;
   margin-bottom: 0;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1006px) {
   #index .top-header {
     justify-content: left;
+    padding-right: 3rem;
   }
 }
 #index .top-header .photo {
   padding: 0.5rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1006px) {
   #index .top-header .photo {
     width: 14.8rem;
   }
@@ -47,7 +53,7 @@ body {
   color: #79797B;
   font-style: italic;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1006px) {
   #index .top-side {
     padding-left: 1.96rem;
   }
@@ -58,7 +64,12 @@ body {
 #index .top-side .basic-info .link-to-cv {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
+  #index .main-main {
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1006px) {
   #index .main-side {
     padding-left: 1.96rem;
   }
@@ -92,6 +103,25 @@ body {
   width: 100%;
 }
 
+.side-line {
+  border-left: 0.2rem solid #0060DF;
+}
+
+.skills {
+  padding-left: 1rem;
+}
+
+.skill {
+  display: inline-block;
+  border: 0.12rem solid #0060DF;
+  color: #0060DF;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
 .spacer-05 {
   height: 0.5rem;
   width: 100%;
@@ -122,7 +152,7 @@ body {
   width: 100% !important;
 }
 #index .main-side {
-  margin-top: 180px;
+  margin-top: 205px;
 }
 #index .main-main * {
   page-break-inside: avoid;

@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
   </head>
 
-  <body>
+  <body class="grid-x align-center">
     <div id="index">
       <div class="top grid-x">
         <div class="top-header grid-x cell small-12 large-9 align-center">
@@ -24,9 +24,9 @@
             <img src="{{header.img}}" />
           </div>
           
-          <div class="title grid-x align-center-middle cell small-12 medium-8 text-center">
-            <h1 class="small-12">{{header.name}} {{header.surname}}</h1>
-            <div class="small-12 position">{{header.position}}</div>
+          <div class="title grid-x align-center-middle cell small-12 medium-7 text-center">
+            <h1 class="cell small-12">{{header.name}} {{header.surname}}</h1>
+            <div class="cell small-12 position">{{header.position}}</div>
           </div>
           <div class="spacer-05"></div>
 
@@ -105,7 +105,7 @@
           <div class="spacer-05"></div>
     
           {{#experience}}
-          <div class="entry">
+          <div class="entry side-line">
             <div class="entry-title">
               <span class="entry-position"> {{position}} </span>
               ― <span class="entry-company"> {{company}} </span>
@@ -116,6 +116,15 @@
               {{date}}
             </div>
             <div class="spacer-05"></div>
+
+            <div class="skills grid-x allign-center">
+              {{#skills}}
+              <div class="skill">
+                {{{.}}}
+              </div>
+              {{/skills}}
+            </div>
+            <div class="spacer-05"></div>
     
             <div class="entry-description">
               {{#description}}
@@ -124,7 +133,7 @@
               {{/description}}
             </div>
           </div>
-          <div class="spacer-1"></div>
+          <div class="spacer-2"></div>
           {{/experience}}
           <div class="spacer-1"></div>
 
@@ -135,7 +144,7 @@
           <div class="spacer-05"></div>
 
           {{#education}}
-          <div class="entry">
+          <div class="entry side-line">
             <div class="entry-title"> 
               <span class="entry-position"> {{degree}} </span>
               ― <span class="entry-company"> {{career}} </span>
@@ -149,7 +158,7 @@
     
             <div class="entry-description">
               {{#description}}
-              {{.}} 
+              {{{.}}} 
               <div class="spacer-05"></div>
               {{/description}}
             </div>
@@ -165,7 +174,7 @@
           <div class="spacer-05"></div>
 
           {{#skills}}
-          <div class="entry">
+          <div class="entry side-line">
             <div class="entry-title"> 
               <span class="entry-position"> {{title}} </span>
             </div>
@@ -188,7 +197,7 @@
           <div class="spacer-05"></div>
 
           {{#projects}}
-          <div class="entry">
+          <div class="entry side-line">
             <div class="entry-title"> 
               <span class="entry-position"> {{title}} </span>
             </div>
@@ -209,47 +218,9 @@
           <div class="spacer-1"></div>
 
         </div>
-        <div class="main-side cell small-12 large-3">
-
-          <!-- ASSETS ---------------------------------- -->
-          <h2>
-            Assets
-          </h2>
-
-          {{#assets}}
-          <div class="entry">
-            <div class="entry-title"> 
-              <span class="entry-position"> {{title}} </span>
-            </div>
-
-            <div class="entry-description">
-              {{description}}
-            </div>
-          </div>
-          <div class="spacer-1"></div>
-          {{/assets}}
-
-          <!-- INTERESTS ---------------------------------- -->
-          <h2>
-            Interests
-          </h2>
-
-          {{#interests}}
-          <div class="entry">
-            <div class="entry-title"> 
-              <span class="entry-position"> {{title}} </span>
-            </div>
-
-            <div class="entry-description">
-              {{description}}
-            </div>
-          </div>
-          <div class="spacer-1"></div>
-          {{/interests}}
-
-        </div>
       </div>
-
+      <div class="spacer-1"></div>
+      
       <h2>
         Consent
       </h2>

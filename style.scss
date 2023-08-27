@@ -2,16 +2,20 @@ $blue: #0060DF;
 $grey: #79797B;
 
 $medium: 640px;
-$large: 1024px;
+$large: 1006px;
 
 body {
   font-family: 'Lato', serif;
 }
 
 #index {
-  margin: 3rem 2rem;
+  margin: 3rem 3rem;
   font-family: 'Lato', sans-serif;
   text-align: justify;
+
+  @media screen and (min-width: $large) {
+    width: 1200px;
+  }
 
   h2 {
     font-size: 1.4rem;
@@ -23,9 +27,10 @@ body {
   .top {
 
     &-header {
-
-      @media screen and (min-width: $medium) {
+      
+      @media screen and (min-width: $large) {
         justify-content: left;
+        padding-right: 3rem;
       }
 
       .photo {
@@ -79,6 +84,13 @@ body {
   }
 
   .main {
+
+    &-main {
+      @media screen and (min-width: $medium) {
+        padding-right: 3rem;
+      }
+    }
+
     &-side {
       @media screen and (min-width: $large) {
         padding-left: 1.96rem;
@@ -118,8 +130,27 @@ body {
 
   a.block {
     display: block;
-    width: 100%
+    width: 100%;
   }
+}
+
+.side-line{
+  border-left: 0.2rem solid $blue;
+}
+
+.skills {
+  padding-left: 1rem;
+}
+
+.skill {
+  display: inline-block;
+  border: 0.12rem solid $blue;
+  color: $blue;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .spacer-05 {
