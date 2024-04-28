@@ -1,4 +1,4 @@
-var data = {
+export const data = {
   header: {
     img: "./photo.jpeg",
     name: "Albert",
@@ -7,6 +7,7 @@ var data = {
     birthday: "17/02/1999",
     email: "szulcalbert@gmail.com",
     phone: "+48 798 977 221 (Wapp)",
+    linkedIn: "linkedin.com/in/a-szulc",
     location: "Bielefeld, Germany",
     github: '<a href="https://github.com/albiosz" target="_blank"> My Github </a>',
     linkToCV: '<a href="https://albiosz.github.io/">  </a>',
@@ -15,70 +16,53 @@ var data = {
 
   languages: [
     {
-      language: "Polish",
-      level: "Native speaker"
-    },
-    {
       language: "English",
       level: "Fluent (C1)"
     },
     {
       language: "German",
-      level: "Fluent (B2)"
-    }
-  ],
-
-  experience: [
-    {
-      position: "Web Developer",
-      company: "The Sales Guys",
-      location: "Bielefeld, Germany",
-      date: "03.2023 - Present",
-      description: [
-        "At the moment I'm working on a web application for lead management. The main purpose of the project is to provide an easy-to-use platform for sales reps to keep track of the sales they are assigned to, and for managers to view the current sales results and let them adjust the distribution rules of the leads.",
-        `<b>Main responsibilities:</b>
-        <ul>
-          <li> Gathering requirements from future users
-          <li> CI/CD setup - GitHub Actions
-          <li> Preparing Docker containers for development, testing and production environments - Docker 
-          <li> Design and implementation of a relational database - PostgreSQL
-          <li> Set up database migration tool - Liquibase
-          <li> RESTful API development - Go, Fiber, Gorm
-          <li> Creating unit and integration tests - Go
-        </ul>`
-      ],
-      skills: [
-        "Go",
-        "Docker",
-        "PostgreSQL",
-        "Database design",
-        "CI/CD",
-        "GitHub Actions",
-        "Unit Tests"
-      ]
+      level: "Fluent (C1)"
     },
     {
-      position: "Web Developer",
+      language: "Polish",
+      level: "Native speaker"
+    }
+    ],
+    
+  experience: [
+    {
+      position: "Software Developer",
       company: "The Sales Guys",
       location: "Bielefeld, Germany",
-      date: "05.2022 - 08.2022",
+      date: "05.2022 - Present",
       description: [
-        "Involved in various internal web projects for the company.",
-        'Implemented a garage configurator from scratch using only essential web technologies (HTML, CSS, JS, jQuery). The solution is available online <a target="_blank" href="https://www.mc-garagen.de/index.php?screen=products">here</a>.',
-        "For the last 2,5 months, I was developing an internal tool for the company's sales reps.",
-        `<b>Main responsibilities:</b> 
-        <ul>
-          <li> Creating a RESTful API using a modern technology stack - Go, Fiber and Gorm
-          <li> Implementing views that consume the API - Vue.js
+        "At the moment I'm working on a web application for lead management. The main purpose of the project is to provide an easy-to-use platform for sales reps to keep track of the sales they are assigned to, and for managers to view the current sales results and let them adjust the distribution rules of the leads.",
+        "<b>Main responsibilities:</b>",
+        `<ul>
+          <li> Developing a full-stack web application from scratch, involved in project architecture decision making processes </li>
+          <li> Gathered requirements from decision makers and created a structured documentation of these decisions </li>
+          <li> Implemented 50+ REST endpoints using Repository, Service, Controller Separation of Concerns design with 80%+ test coverage - Go </li>
+          <li> Designed (ERP Diagram) and implemented a relational database with 30+ tables - PostgreSQL </li>
+          <li> Wrote integration tests, thereby ensuring compliance with business requirements </li>
+          <li> Reduced code duplication by creating a separate Go module for code used by all projects in the company - Go Modules </li>
+          <li> Prepared Docker containers for development, test and production environments - Docker, Linux </li>
+          <li> Suggested and implemented CI action to automatically test code before merging, resulting in significantly fewer bugs in the production code - Github Actions </li> 
+          <li> Implemented API plugin to standardize and simplify HTTP requests to the backend - JavaScript, TypeScript, Vue.js </li> 
+          <li> Set up database migration tool - Liquibase </li>
         </ul>`
       ],
       skills: [
-        "REST",
         "Go",
+        "PostgreSQL",
+        "Database design",
+        "Docker",
+        "Unit Tests",
         "JavaScript",
+        "TypeScript",
         "Vue.js",
         "HTML5",
-        "CSS3"
+        "CSS3",
+        "CI/CD"
       ]
     },
     {
@@ -88,6 +72,12 @@ var data = {
       date: "08.2021 - 09.2021",
       description: [
         "It was a great experience to see how a large software company works from an insight perspective. I was part of a team working on a software solution to manage water sources in Bavaria, Germany. I experienced SCRUM in practice and learned about technologies for managing large projects such as Jira and Jenkins and deepened my knowledge of Git.",
+        `<ul>
+          <li> Deepened my knowledge of Git by working on a large scale project </li>
+          <li> Learn about project management technologies such as Jira and Jenkins </li>
+          <li> Experienced SCRUM in practice </li>
+        </ul>
+        `
       ],
       skills: [
         "Git",
@@ -111,22 +101,25 @@ var data = {
   education: [
     {
       degree: "Bachelor of Engineering",
-      career: "Computer Science",
+      career: "B.Eng. in Computer Science",
       university: "Poznań University of Technology",
-      date: "From October 2018 to February 2022",
+      date: "10.2018 - 02.2022",
       description: [
         "Graduated in February 2022 with the highest possible mark for bachelor thesis - 5.0 (max: 5.0, min 2.0). The average mark during the whole period of studies: 4.64 (max: 5.0, min 2.0).",
-        "<b>Most relevant courses:</b> Algorithms and Data Structures, Operating Systems, Object Oriented Programming, Database Systems, Computer Networks, Software Engineering, Advanced Internet Applications."
+        `
+          <p> For my Bachelor Thesis, I developed a front-end application using React, enabling users to track their vehicles' real-time positions on a map. </p>
+          <p> <b>Most relevant courses:</b> Algorithms and Data Structures, Operating Systems, Object Oriented Programming, Database Systems, Computer Networks, Software Engineering, Advanced Internet Applications. </p>
+        `
       ]
     },
     {
       degree: "Bachelor of Engineering (student exchange)",
-      career: "Computer Science",
+      career: "Exchange student",
       university: "Bielefeld University",
-      date: "From March 2021 to February 2022",
+      date: "03.2021 - 02.2022",
       description: [
         "During the exchange programme, I took courses in both English and German.",
-        "<b>Most relevant courses:</b> Introduction to Neural Networks, Cryptography, Big Data Analytics, Cloud Computing, Machine Learning, Data Mining."
+        "<b>Most relevant courses:</b> Cryptography, Cloud Computing, Data Mining."
       ]
     }
   ],
@@ -187,10 +180,10 @@ var data = {
       title: "Car tracker (React + Redux)",
       description: `The app was the main part of my bachelor thesis. The aim was to create an easily accessible interface for a user to access a service, created by the other part of a team. The project includes:  
       <ul>
-        <li> a single-page application (React)
-        <li> centralized state of the application - (Redux)
-        <li> OpenStreetMap - (Leaflet)
-        <li> fetching and handling data from API - (GET, POST, SSE)
+        <li> a single-page application (React) </li>
+        <li> centralized state of the application - (Redux) </li>
+        <li> OpenStreetMap - (Leaflet) </li>
+        <li> fetching and handling data from API - (GET, POST, SSE) </li>
       </ul>`,
       link: "https://github.com/albiosz/car-tracker-frontend",
       footnote: "The app was also deployed on Netlify",
@@ -200,19 +193,29 @@ var data = {
       title: "Simple Text Editor (Java + Swing)",
       description: `Basic text editor with easy-to-use GUI, which allows a user to:
       <ul>
-        <li> create new or open a text file,
-        <li> search through a file using regular expressions or plain text
+        <li> create new or open a text file, </li>
+        <li> search through a file using regular expressions or plain text </li>
       </ul>`,
       link: "https://github.com/albiosz/Simple-Text-Editor"
     },
   ],
 
+  awards: [
+    "<b> Scholarship </b> for the top 10% of students at the Faculty of Computer Science | Poznan University of Technology",
+  ],
+
+  interests: [
+    "mindfulness",
+    "friends &amp; family time", 
+    "jogging, calisthenics",
+    "healthy nutrition",
+  ],
+
   consent: "I hereby give consent for my personal data included in the application to be processed for the purposes of the recruitment process in accordance with Art. 6 paragraph 1 letter a of the Regulation of the European Parliament and of the Council (EU) 2016/679 of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)."
 }
 
-function renderPagge() {
+export function renderPage(data) {
   let template = document.getElementById('index').innerHTML;
   let rendered = Mustache.render(template, data);
   document.getElementById('index').innerHTML = rendered;
 }
-renderPagge()
