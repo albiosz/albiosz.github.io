@@ -10,9 +10,24 @@
   <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
   
 
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" type="text/css" href="print.css" />
-  <script src="../data.js" type="module"></script>
+  <link rel="stylesheet" type="text/css" href="css/0.global.css" />
+  <link rel="stylesheet" type="text/css" href="css/header.css" />
+  <link rel="stylesheet" type="text/css" href="css/icon.css">
+  <link rel="stylesheet" type="text/css" href="css/print.css" />
+  <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+  <link rel="stylesheet" type="text/css" href="css/skill.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main-block/0.main.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main-block/entry/0.main.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main-block/entry/timeline/date.css" />
+  <link rel="stylesheet" type="text/css" href="css/main-block/entry/timeline/dot.css" />
+  <link rel="stylesheet" type="text/css" href="css/main-block/entry/timeline/line.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main-block/entry/details/0.main.css" />
+  <link rel="stylesheet" type="text/css" href="css/main-block/entry/details/company.css" />
+  <link rel="stylesheet" type="text/css" href="css/main-block/entry/details/ul.css" />
 </head>
 
 <body lang="en" id="index">
@@ -44,16 +59,16 @@
   </section>
 
   <!-- Professional Experiences -->
-  <section class="main-block time-line">
+  <section class="main-block timeline-block">
     <h2>
       <i class="fa fa-suitcase"></i> Experiences
     </h2>
     {{#experience}}
-    <section class="blocks">
+    <section class="entry">
       <div class="date">
         <span>{{ end }}</span><span>{{ start }}</span>
       </div>
-      <div class="decorator"></div>
+      <div class="timeline"></div>
       <div class="details">
         <header>
           <h3>{{ position }}</h3>
@@ -71,16 +86,16 @@
   </section>
 
   <!-- Education -->
-  <section class="main-block concise time-line">
+  <section class="main-block concise timeline-block">
     <h2>
       <i class="fa fa-graduation-cap"></i> Education
     </h2>
     {{#education}}
-    <section class="blocks">
+    <section class="entry">
       <div class="date">
         <span>{{ end }}</span><span>{{ start }}</span>
       </div>
-      <div class="decorator"></div>
+      <div class="timeline"></div>
       <div class="details">
         <header>
           <h3>{{ career }}</h3>
@@ -103,8 +118,16 @@
     <h1>Contact Info</h1>
     <ul>
       <!-- <li><i class="fa fa-globe"></i> {{ sidebar.linkToCV }} </li> -->
-      <li><i class="fa-brands fa-linkedin"></i> {{ sidebar.linkedIn }} </li>
-      <li><i class="fa-regular fa-envelope"></i> {{ sidebar.email }} </li>
+      <li>
+        <a href="https://{{sidebar.linkedIn}}" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> {{ sidebar.linkedIn }}
+        </a>
+      </li>
+      <li>
+        <a href="https://{{sidebar.email}}" target="_blank">
+          <i class="fa-regular fa-envelope"></i> {{ sidebar.email }}
+        </a>
+      </li>
     </ul>
   </section>
 

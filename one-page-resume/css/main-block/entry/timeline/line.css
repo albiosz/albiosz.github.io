@@ -1,0 +1,27 @@
+/* TODO: Replace the class below with padding after h2 in timeline-block */
+/* extends the timeline line below h2 */
+main .timeline-block h2::after {
+  height: calc(var(--row-entry-padding-top) * 2);
+  position: relative;
+  top: calc(-1 * var(--row-entry-padding-top));
+  left: calc(-1 * var(--timeline-horizontal-margin));
+  display: block;
+  border-left: var(--timeline-border);
+  z-index: 0;
+  line-height: 0;
+  font-size: 0;
+  content: " ";
+}
+
+.timeline {
+  flex: 0 0 0;
+  position: relative;
+  width: 2pt;
+  min-height: 100%;
+  border-left: var(--timeline-border);
+}
+
+.entry:last-child .timeline {
+  /* slightly shortens it */
+  margin-bottom: 0.15in;
+}

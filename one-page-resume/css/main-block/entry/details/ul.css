@@ -1,0 +1,5 @@
+main .details li::before {
+  position: relative;
+  margin-left: -4.25pt;
+  content: "• ";
+}

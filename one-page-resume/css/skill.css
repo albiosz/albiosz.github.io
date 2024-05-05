@@ -1,0 +1,33 @@
+/* skills */
+.skills {
+  margin-top: calc(var(--row-entry-padding-top) * 2);
+  margin-left: calc(var(--date-block-width));
+}
+
+.skill .name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+}
+
+.skill ul {
+  display: inline flex;
+  list-style-type: none;
+  margin: 1pt 0;
+  padding: 0;
+  font-size: 8.5pt;
+}
+
+.skill li {
+  list-style-type: none;
+  display: inline block;
+  margin: 0 1pt;
+}
+
+.skill li::before {
+  content: "• ";
+}
+
+.skill li:first-of-type::before {
+  content: "";
+}

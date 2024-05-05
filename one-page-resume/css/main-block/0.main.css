@@ -1,0 +1,21 @@
+/* main block - Experiences, Skills, Education */
+
+main > section {
+  margin-top: 0.1in;
+}
+
+main h2 {
+  position: relative;
+  top: var(--row-entry-padding-top);
+  left: calc((var(--date-block-width) + var(--timeline-horizontal-margin)));
+  font-weight: 400;
+  font-size: 11pt;
+  color: #555;
+}
+
+main h2 > i {
+  position: relative;
+  left: var(--main-entry-title-icon-offset-left);
+  z-index: 1;
+  color: #444;
+}

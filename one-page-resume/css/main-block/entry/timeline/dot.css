@@ -1,0 +1,36 @@
+/*
+ * XXX: Use two filled circles to achieve the circle-with-white-border effect.
+ * The normal technique of only using one pseudo element and
+ * border: 1px solid white; style makes firefox erroneously either:
+ * 1) overflows the grayshade background (if no background-clip is set), or
+ * 2) shows timeline line which should've been masked by the white border
+ *
+ */
+
+/* Defines white border around the time dot on the time line */
+.timeline::before {
+  position: absolute;
+  top: var(--timeline-outer-offset-top);
+  left: var(--timeline-outer-offset-left);
+  content: " ";
+  display: block;
+  width: var(--timeline-outer-dim);
+  height: var(--timeline-outer-dim);
+  border-radius: calc(var(--timeline-outer-dim) / 2);
+  background-color: #fff;
+}
+
+/* Defines the gray time dot on the time line */
+.timeline::after {
+  position: absolute;
+  top: calc(var(--timeline-outer-offset-top) + var(--timeline-border-width));
+  left: calc(var(--timeline-outer-offset-left) + var(--timeline-border-width));
+  content: "";
+  display: block;
+  width: calc(var(--timeline-outer-dim) - (var(--timeline-border-width) * 2));
+  height: calc(var(--timeline-outer-dim) - (var(--timeline-border-width) * 2));
+  border-radius: calc(
+    (var(--timeline-outer-dim) - (var(--timeline-border-width) * 2)) / 2
+  );
+  background-color: #555;
+}

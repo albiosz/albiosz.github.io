@@ -1,0 +1,16 @@
+#title {
+  padding-left: 0.55in;
+  margin-bottom: 0.2in;
+  line-height: 1.2;
+}
+
+#title h1 {
+  font-weight: 300;
+  font-size: 18pt;
+  line-height: 1.5;
+}
+
+.subtitle {
+  font-size: 9pt;
+  text-align: justify;
+}

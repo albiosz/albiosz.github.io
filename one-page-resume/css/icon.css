@@ -1,0 +1,13 @@
+/**** minor tweaks on the icon fonts ****/
+main h2 > .fa-graduation-cap {
+  left: calc(var(--main-entry-title-icon-offset-left) - 2pt);
+  top: 2pt;
+}
+
+main h2 > .fa-suitcase {
+  top: 1pt;
+}
+
+main h2 > .fa-folder-open {
+  top: 1.5pt;
+}

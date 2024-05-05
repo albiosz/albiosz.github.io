@@ -1,0 +1,36 @@
+/***** fine-tunes on the details block where the real juice is *****/
+.details {
+  flex: 1 0 0;
+  padding-left: var(--timeline-horizontal-margin);
+  padding-top: calc(
+    var(--row-entry-padding-top) - 0.5pt
+  ) !important; /* not sure why but this is needed for better alignment */
+}
+
+.details header {
+  color: #000;
+}
+
+.details h3 {
+  font-size: 9pt;
+}
+
+.main-block:not(.concise) .details .description {
+  margin: 0.1in 0 0.1in 0;
+}
+
+.concise .details .description {
+  margin: 0.05in 0 0.05in 0;
+
+  p {
+    margin: 0.03in;
+  }
+}
+
+.main-block .details .description b {
+  font-weight: bold;
+}
+
+.main-block:not(.concise) .entry:last-child .details .description {
+  margin-bottom: 0;
+}

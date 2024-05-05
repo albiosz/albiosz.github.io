@@ -1,0 +1,20 @@
+.company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company .place {
+  display: inline-block;
+}
+
+.details .location::before {
+  display: inline-block;
+  position: relative;
+  right: 3pt;
+  top: 0.25pt;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  content: "\f041";
+}

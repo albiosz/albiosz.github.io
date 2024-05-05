@@ -1,0 +1,10 @@
+/**** individual row entry (date - timeline - details) ****/
+
+.entry {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.entry > div {
+  padding-top: var(--row-entry-padding-top);
+}
