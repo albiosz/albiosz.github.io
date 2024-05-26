@@ -8,9 +8,15 @@
   font-weight: 300;
   font-size: 18pt;
   line-height: 1.5;
+  margin-bottom: 0.12in;
 }
 
 .subtitle {
   font-size: 9pt;
   text-align: justify;
+  display: block;
+}
+
+.subtitle p {
+  margin: 0.03in 0;
 }

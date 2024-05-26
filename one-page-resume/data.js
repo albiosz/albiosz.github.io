@@ -4,15 +4,19 @@ const onePageData = {
   header: {
     name: fullData.header.name,
     surname: fullData.header.surname,
-    birthday: fullData.header.birthday,
-    introduction: fullData.header.introduction,
+    introduction: "<p> I am a software developer focused on developing clean, well-structured and extensible software. \
+    My experience in both professional and academic projects has shown me the critical importance of proper software design for extensibility, maintainability and the overall success of the final product. </p> \
+    <p> Therefore, I am eager to continue my education and deepen my knowledge in this field to contribute more effectively to efficient software solutions.</p>",
   },
 
   sidebar: {
+    birthday: fullData.header.birthday,
+    countryOfBirth: fullData.header.countryOfBirth,
+    location: fullData.header.location,
     linkToCV: fullData.header.linkToCV,
     email: fullData.header.email,
     github: "github.com/albiosz",
-    phone: fullData.header.phone,
+    phone: fullData.header.phoneGerman,
     linkedIn: fullData.header.linkedIn
   },
 
@@ -57,7 +61,7 @@ const onePageData = {
       end: e.date.split(' - ')[1],
       career: e.career,
       university: e.university,
-      description: e.description[e.description.length - 1]
+      description: e.description
     }  
   }),
 

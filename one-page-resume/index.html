@@ -16,34 +16,39 @@
 <main>
   <header id="title">
     <h1>{{ header.name }} {{ header.surname }} </h1>
-    <p class="subtitle">{{ header.introduction }}</p>
+    <span class="subtitle">{{{ header.introduction }}}</span>
   </header>
-
-  <!-- Skills -->
-  <section class="main-block">
-    <h2>
-      <i class="fa fa-cogs"></i> Skills
-    </h2>
   
-    <section class="skills">
-      {{#skills}}
-      <div class="skill">
-        <span class="name">{{ title }}</span>:
-        <ul>
-          {{#skills}}
-          <li>{{.}} </li>
-          {{/skills}}
-        </ul>
-      </div>
-      {{/skills}}
+    <!-- Education -->
+    <section class="main-block concise timeline-block">
+      <h2>
+        <i class="fa fa-graduation-cap"></i> Education
+      </h2>
+      {{#education}}
+      <section class="entry">
+        <div class="date">
+          <span>{{ end }}</span><span>{{ start }}</span>
+        </div>
+        <div class="timeline"></div>
+        <div class="details">
+          <header>
+            <h3>{{ career }}</h3>
+            <span class="place">{{ university }}</span>
+          </header>
+          <div class="description">
+            {{#description}}
+            <p> {{{.}}} </p>
+            {{/description}}
+          </div>
+        </div>
+      </section>
+      {{/education}}
     </section>
-        
-  </section>
 
   <!-- Professional Experiences -->
   <section class="main-block timeline-block">
     <h2>
-      <i class="fa fa-suitcase"></i> Experiences
+      <i class="fa fa-suitcase"></i> Experience
     </h2>
     {{#experience}}
     <section class="entry">
@@ -67,47 +72,31 @@
     {{/experience}}
   </section>
 
-  <!-- Education -->
-  <section class="main-block concise timeline-block">
-    <h2>
-      <i class="fa fa-graduation-cap"></i> Education
-    </h2>
-    {{#education}}
-    <section class="entry">
-      <div class="date">
-        <span>{{ end }}</span><span>{{ start }}</span>
-      </div>
-      <div class="timeline"></div>
-      <div class="details">
-        <header>
-          <h3>{{ career }}</h3>
-          <span class="place">{{ university }}</span>
-        </header>
-        <div class="description">
-          {{{ description }}}
-        </div>
-      </div>
-    </section>
-    {{/education}}
-  </section>
-
-
 </main>
 
 <aside>
   
   <section class="side-block">
-    <h1>Contact Info</h1>
+    <h1>Personal details</h1>
     <ul>
       <!-- <li><i class="fa fa-globe"></i> {{ sidebar.linkToCV }} </li> -->
       <li>
-        <a href="https://{{sidebar.linkedIn}}" target="_blank">
-          <i class="fa-brands fa-linkedin"></i> {{ sidebar.linkedIn }}
+        <i class="fa-solid fa-location-dot"></i> Birth {{ sidebar.birthday }}, {{ sidebar.countryOfBirth}}
+      </li>
+      <li>
+        <i class="fa-solid fa-house"></i> {{ sidebar.location }}
+      </li>
+      <li>
+        <i class="fa-solid fa-phone"></i> {{ sidebar.phone }}
+      </li>
+      <li>
+        <a href="mailto:{{sidebar.email}}">
+          <i class="fa-regular fa-envelope"></i> {{ sidebar.email }}
         </a>
       </li>
       <li>
-        <a href="https://{{sidebar.email}}" target="_blank">
-          <i class="fa-regular fa-envelope"></i> {{ sidebar.email }}
+        <a href="https://{{sidebar.linkedIn}}" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> {{ sidebar.linkedIn }}
         </a>
       </li>
     </ul>
@@ -123,16 +112,21 @@
   </section>
 
   <section class="side-block">
-    <h1>Side Projects</h1>
-    <ul>
-      <li>
-        <a href="https://{{sidebar.github}}" target="_blank">
-          <i class="fa-brands fa-github"></i> {{ sidebar.github }}
-        </a>
-      </li>
-    </ul>
+    <h1>Skills</h1>
+    <section>
+      {{#skills}}
+      <div class="skill">
+        <span class="name">{{ title }}</span>:
+        <ul>
+          {{#skills}}
+          <li>{{.}} </li>
+          {{/skills}}
+        </ul>
+      </div>
+      {{/skills}}
+    </section>
   </section>
-
+  
   <section class="side-block">
     <h1>Awards</h1>
     <ul class="list-points">
@@ -142,6 +136,17 @@
     </ul>
   </section>
 
+  <section class="side-block">
+    <h1>Side Projects</h1>
+    <ul>
+      <li>
+        <a href="https://{{sidebar.github}}" target="_blank">
+          <i class="fa-brands fa-github"></i> {{ sidebar.github }}
+        </a>
+      </li>
+    </ul>
+  </section>
+  
   <section class="side-block">
     <h1>Interests</h1>
     <ul class="list-points">

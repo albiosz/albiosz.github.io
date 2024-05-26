@@ -2,7 +2,7 @@ aside {
   width: var(--sidebar-width);
   /* position: relative; */
   height: 100%;
-  padding: 0.6in 0.2in;
+  padding: var(--padding-top) 0.2in 0.6in 0.2in;
   background-color: #f2f2f2;
   font-size: 8.5pt;
 }

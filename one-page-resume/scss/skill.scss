@@ -4,6 +4,10 @@
   margin-left: calc(var(--date-block-width));
 }
 
+.skill {
+  margin-bottom: 2pt;
+}
+
 .skill .name {
   text-transform: uppercase;
   font-weight: bold;
@@ -11,23 +15,20 @@
 }
 
 .skill ul {
-  display: inline flex;
   list-style-type: none;
-  margin: 1pt 0;
+  margin: 0.5pt 0 8pt 0;
   padding: 0;
   font-size: 8.5pt;
 }
 
 .skill li {
   list-style-type: none;
-  display: inline block;
+  display: inline;
   margin: 0 1pt;
+  white-space: nowrap;
 }
 
 .skill li::before {
   content: "• ";
 }
 
-.skill li:first-of-type::before {
-  content: "";
-}
