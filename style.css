@@ -15,7 +15,7 @@ body {
 #index h2 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #0060DF;
+  color: #0060df;
   margin-bottom: 0;
 }
 @media screen and (min-width: 1006px) {
@@ -46,11 +46,11 @@ body {
   margin: 0;
 }
 #index .top-header .title .position {
-  color: #0060DF;
+  color: #0060df;
   font-size: 1.3rem;
 }
 #index .top-header .introduction {
-  color: #79797B;
+  color: #79797b;
   font-style: italic;
 }
 @media screen and (min-width: 1006px) {
@@ -59,7 +59,7 @@ body {
   }
 }
 #index .top-side .basic-info {
-  color: #79797B;
+  color: #79797b;
 }
 #index .top-side .basic-info .link-to-cv {
   display: none;
@@ -78,7 +78,7 @@ body {
   margin-bottom: 0;
 }
 #index .consent {
-  color: #79797B;
+  color: #79797b;
   padding-left: 1rem;
   font-size: 0.9rem;
 }
@@ -90,10 +90,10 @@ body {
   font-weight: 700;
 }
 .entry-company {
-  color: #0060DF;
+  color: #0060df;
 }
 .entry-date {
-  color: #79797B;
+  color: #79797b;
 }
 .entry-description {
   padding-left: 1rem;
@@ -104,7 +104,7 @@ body {
 }
 
 .side-line {
-  border-left: 0.2rem solid #0060DF;
+  border-left: 0.2rem solid #0060df;
 }
 
 .skills {
@@ -113,8 +113,8 @@ body {
 
 .skill {
   display: inline-block;
-  border: 0.12rem solid #0060DF;
-  color: #0060DF;
+  border: 0.12rem solid #0060df;
+  color: #0060df;
   padding: 0.4rem 1rem;
   text-align: center;
   border-radius: 1rem;
