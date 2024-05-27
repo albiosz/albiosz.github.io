@@ -55,7 +55,7 @@ li {
 main {
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
-  font-size: 8pt;
+  font-size: 8.5pt;
 }
 
 main ul {
@@ -263,8 +263,9 @@ main h2 > i {
 
 main .details li::before {
   position: relative;
-  margin-left: -4.25pt;
-  content: "• ";
+  margin-left: -5pt;
+  right: 5pt;
+  content: "•";
 }
 
 .date {

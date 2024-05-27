@@ -4,9 +4,11 @@ export const data = {
     name: "Albert",
     surname: "Szulc",
     position: "SOFTWARE DEVELOPER",
-    birthday: "17/02/1999",
+    birthday: "17.02.1999",
+    countryOfBirth: "Poland",
     email: "szulcalbert@gmail.com",
     phone: "+48 798 977 221 (Wapp)",
+    phoneGerman: "+49 1632 780 614",
     linkedIn: "linkedin.com/in/a-szulc",
     location: "Bielefeld, Germany",
     github: '<a href="https://github.com/albiosz" target="_blank"> My Github </a>',
@@ -39,16 +41,16 @@ export const data = {
         "At the moment I'm working on a web application for lead management. The main purpose of the project is to provide an easy-to-use platform for sales reps to keep track of the sales they are assigned to, and for managers to view the current sales results and let them adjust the distribution rules of the leads.",
         "<b>Main responsibilities:</b>",
         `<ul>
-          <li> Developing a full-stack web application from scratch, involved in project architecture decision making processes </li>
-          <li> Gathered requirements from decision makers and created a structured documentation of these decisions </li>
-          <li> Implemented 50+ REST endpoints using Repository, Service, Controller Separation of Concerns design with 80%+ test coverage - Go </li>
-          <li> Designed (ERP Diagram) and implemented a relational database with 30+ tables - PostgreSQL </li>
-          <li> Wrote integration tests, thereby ensuring compliance with business requirements </li>
-          <li> Reduced code duplication by creating a separate Go module for code used by all projects in the company - Go Modules </li>
-          <li> Prepared Docker containers for development, test and production environments - Docker, Linux </li>
-          <li> Suggested and implemented CI action to automatically test code before merging, resulting in significantly fewer bugs in the production code - Github Actions </li> 
-          <li> Implemented API plugin to standardize and simplify HTTP requests to the backend - JavaScript, TypeScript, Vue.js </li> 
-          <li> Set up database migration tool - Liquibase </li>
+          <li>Developing a full-stack web application from scratch, involved in project architecture decision making processes </li>
+          <li>Gathered requirements from decision makers and created a structured documentation of these decisions </li>
+          <li>Implemented 50+ REST endpoints using Repository, Service, Controller Separation of Concerns design with 80%+ test coverage - Go </li>
+          <li>Designed (ERP Diagram) and implemented a relational database with 30+ tables - PostgreSQL </li>
+          <li>Wrote integration tests, thereby ensuring compliance with business requirements </li>
+          <li>Reduced code duplication by creating a separate Go module for code used by all projects in the company - Go Modules </li>
+          <li>Prepared Docker containers for development, test and production environments - Docker, Linux </li>
+          <li>Suggested and implemented CI action to automatically test code before merging, resulting in significantly fewer bugs in the production code - Github Actions </li> 
+          <li>Implemented API plugin to standardize and simplify HTTP requests to the backend - JavaScript, TypeScript, Vue.js </li> 
+          <li>Set up database migration tool - Liquibase </li>
         </ul>`
       ],
       skills: [
@@ -73,9 +75,9 @@ export const data = {
       description: [
         "It was a great experience to see how a large software company works from an insight perspective. I was part of a team working on a software solution to manage water sources in Bavaria, Germany. I experienced SCRUM in practice and learned about technologies for managing large projects such as Jira and Jenkins and deepened my knowledge of Git.",
         `<ul>
-          <li> Deepened my knowledge of Git by working on a large scale project </li>
-          <li> Learn about project management technologies such as Jira and Jenkins </li>
-          <li> Experienced SCRUM in practice </li>
+          <li>Deepened my knowledge of Git by working on a large scale project </li>
+          <li>Learn about project management technologies such as Jira and Jenkins </li>
+          <li>Experienced SCRUM in practice </li>
         </ul>
         `
       ],
@@ -105,9 +107,9 @@ export const data = {
       university: "Poznań University of Technology",
       date: "10.2018 - 02.2022",
       description: [
-        "Graduated in February 2022 with the highest possible mark for bachelor thesis - 5.0 (max: 5.0, min 2.0). The average mark during the whole period of studies: 4.64 (max: 5.0, min 2.0).",
+        "Graduated in February 2022 with the highest possible grade for a bachelor thesis - <b>5.0</b> (max: 5.0, min 2.0). The average grade for the whole period of studies: <b>4.64</b> (max: 5.0, min 2.0).",
         `
-          <p> For my Bachelor Thesis, I developed a front-end application using React, enabling users to track their vehicles' real-time positions on a map. </p>
+          <p> <b>Bachelor Thesis</b>: Developed a front-end web application using React that allows users to track the real-time position of their vehicles on an interactive map. </p>
           <p> <b>Most relevant courses:</b> Algorithms and Data Structures, Operating Systems, Object Oriented Programming, Database Systems, Computer Networks, Software Engineering, Advanced Internet Applications. </p>
         `
       ]
@@ -118,8 +120,12 @@ export const data = {
       university: "Bielefeld University",
       date: "03.2021 - 02.2022",
       description: [
-        "During the exchange programme, I took courses in both English and German.",
-        "<b>Most relevant courses:</b> Cryptography, Cloud Computing, Data Mining."
+        `<ul>
+          <li>Completed the last two semesters of my Bachelor's degree at Bielefeld University as a part of the Erasmus+ exchange program </li>
+          <li>This experience exposed me to a different academic structure compared to my studies in Poland </li>
+          <li>Had an opportunity to take part in courses in both English and German </li>
+        </ul>`,
+        "<p> <b>Most relevant courses:</b> Cryptography, Cloud Computing, Data Mining. </p>"
       ]
     }
   ],
@@ -180,10 +186,10 @@ export const data = {
       title: "Car tracker (React + Redux)",
       description: `The app was the main part of my bachelor thesis. The aim was to create an easily accessible interface for a user to access a service, created by the other part of a team. The project includes:  
       <ul>
-        <li> a single-page application (React) </li>
-        <li> centralized state of the application - (Redux) </li>
-        <li> OpenStreetMap - (Leaflet) </li>
-        <li> fetching and handling data from API - (GET, POST, SSE) </li>
+        <li>a single-page application (React) </li>
+        <li>centralized state of the application - (Redux) </li>
+        <li>OpenStreetMap - (Leaflet) </li>
+        <li>fetching and handling data from API - (GET, POST, SSE) </li>
       </ul>`,
       link: "https://github.com/albiosz/car-tracker-frontend",
       footnote: "The app was also deployed on Netlify",
@@ -193,8 +199,8 @@ export const data = {
       title: "Simple Text Editor (Java + Swing)",
       description: `Basic text editor with easy-to-use GUI, which allows a user to:
       <ul>
-        <li> create new or open a text file, </li>
-        <li> search through a file using regular expressions or plain text </li>
+        <li>create new or open a text file, </li>
+        <li>search through a file using regular expressions or plain text </li>
       </ul>`,
       link: "https://github.com/albiosz/Simple-Text-Editor"
     },
