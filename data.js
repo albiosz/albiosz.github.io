@@ -34,23 +34,23 @@ export const data = {
   experience: [
     {
       position: "Software Developer",
-      company: "The Sales Guys",
+      company: "Adgency",
       location: "Bielefeld, Germany",
-      date: "05.2022 - Present",
+      date: "05.2022 - 08.2024",
       description: [
         "At the moment I'm working on a web application for lead management. The main purpose of the project is to provide an easy-to-use platform for sales reps to keep track of the sales they are assigned to, and for managers to view the current sales results and let them adjust the distribution rules of the leads.",
         "<b>Main responsibilities:</b>",
         `<ul>
-          <li>Developing a full-stack web application from scratch, involved in project architecture decision making processes </li>
+          <li>Developing a <u>full-stack</u> web application from scratch, involved in <u>project architecture</u> decision making processes </li>
           <li>Gathered requirements from decision makers and created a structured documentation of these decisions </li>
-          <li>Implemented 50+ REST endpoints using Repository, Service, Controller Separation of Concerns design with 80%+ test coverage - Go </li>
-          <li>Designed (ERP Diagram) and implemented a relational database with 30+ tables - PostgreSQL </li>
-          <li>Wrote integration tests, thereby ensuring compliance with business requirements </li>
-          <li>Reduced code duplication by creating a separate Go module for code used by all projects in the company - Go Modules </li>
+          <li>Implemented <u>50+ REST</u> endpoints using Repository, Service, Controller Separation of Concerns design with <u>80%+ test coverage</u> - <u>Go</u> </li>
+          <li>Designed (ERP Diagram) and implemented a relational database with <u>30+ tables</u> - <u>PostgreSQL</u> </li>
+          <li>Wrote <u>integration tests</u>, thereby ensuring compliance with business requirements </li>
+          <li>Reduced code duplication by creating a separate Go module for code used by all projects in the company - <u>Go Modules</u> </li>
           <li>Prepared Docker containers for development, test and production environments - Docker, Linux </li>
-          <li>Suggested and implemented CI action to automatically test code before merging, resulting in significantly fewer bugs in the production code - Github Actions </li> 
-          <li>Implemented API plugin to standardize and simplify HTTP requests to the backend - JavaScript, TypeScript, Vue.js </li> 
-          <li>Set up database migration tool - Liquibase </li>
+          <li>Suggested and implemented <u>CI</u> action to automatically test code before merging, resulting in <u>significantly fewer bugs</u> in the production code - <u>Github Actions</u> </li> 
+          <li>Implemented API plugin to standardize and simplify HTTP requests to the backend - <u>JavaScript, TypeScript, Vue.js</u> </li> 
+          <li>Set up <u>database migration</u> tool - Liquibase </li>
         </ul>`
       ],
       skills: [
@@ -76,8 +76,7 @@ export const data = {
         "It was a great experience to see how a large software company works from an insight perspective. I was part of a team working on a software solution to manage water sources in Bavaria, Germany. I experienced SCRUM in practice and learned about technologies for managing large projects such as Jira and Jenkins and deepened my knowledge of Git.",
         `<ul>
           <li>Deepened my knowledge of Git by working on a large scale project </li>
-          <li>Learn about project management technologies such as Jira and Jenkins </li>
-          <li>Experienced SCRUM in practice </li>
+          <li>Completed minor tasks in an agile team under experienced developers' supervision</li>
         </ul>
         `
       ],
@@ -101,6 +100,18 @@ export const data = {
   ],
 
   education: [
+    {
+      degree: "Master of Science in Engineering",
+      career: "M.Sc. in Software Design & Engineering",
+      university: "FH Campus Wien",
+      date: "09.2024 - Present",
+      description: [
+        `
+        <p> <b>Program Focus: </b> Gaining comprehensive expertise in all critical stages of the data development process, from project planning to maintenance.
+        <p> <b>Most relevant courses (taken up to now):</b> Advanced Software Development, Software Architectures, Cloud Computing, Requirements Engineering
+        `
+      ]
+    },
     {
       degree: "Bachelor of Engineering",
       career: "B.Eng. in Computer Science",

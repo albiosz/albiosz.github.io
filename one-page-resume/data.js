@@ -33,10 +33,10 @@ const onePageData = {
       skills: ["Unit", "Integration"],
     }, {
       title: "miscellaneous",
-      skills: ["Git", "Docker"],
+      skills: ["Git", "Docker", "REST"],
     }, {
       title: "frontend", 
-      skills: ["HTML", "CSS", "JavaScript", "TypeScript", "Vue.js"],
+      skills: ["HTML", "CSS", "JavaScript", "TypeScript", "Vue.js", "Bootstrap"],
     }
   ],
 
@@ -51,7 +51,7 @@ const onePageData = {
     }
   }),
 
-  education: fullData.education.map(e => {
+  education: fullData.education.slice(0,-1).map(e => {
     return {
       start: e.date.split(' - ')[0],
       end: e.date.split(' - ')[1],
@@ -63,8 +63,12 @@ const onePageData = {
 
   awards: fullData.awards,
   interests: fullData.interests,
-
-  // achievements: scholarship for the best 10% of students
+  
+  studentExchange: [
+    "<b> Bielefeld University </b>",
+    "03.2021 - 02.2022",
+    "<b>Most relevant courses:</b> Cryptography, Cloud Computing, Data Mining. </p>"
+  ]
 }
 
 renderPage(onePageData)
